@@ -21,3 +21,6 @@ jobs:
         dependency-graph: generate-and-submit
     - name: Run the usual CI build (dependency-graph will be generated and submitted post-job)
       run: ./gradlew build
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
